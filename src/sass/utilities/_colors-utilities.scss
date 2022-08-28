@@ -1,9 +1,0 @@
-@use '../abstracts' as *;
-
-.bg-dark { background-color: hsl( $clr-dark-blue ); }
-.bg-white { background-color: hsl( $clr-white ); }
-.bg-light { background-color: hsl( $clr-light-grey ); }
-.bg-greyish { background-color: hsl( $clr-greyish-blue ); }
-
-.text-dark { color: hsl( $clr-dark-blue ); }
-.text-light { color: hsl( $clr-greyish-blue ); }

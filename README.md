@@ -1,74 +1,65 @@
 # Frontend Mentor - QR code component solution
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![](./images/app-preview.jpg)
+
+This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+- [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgements](#acknowledgements)
 
-## Overview
+## Links
 
-### Screenshot
-
-![](./screenshots/desktop-screenshot.png) 
-
-### Links
-
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/card-component-build-with-sass-using-partials-and-utility-classes-ByOipGK79)
-- Live Site URL: [QR code component](https://mateusabelli.github.io/qr-code-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/ ...](https://www.frontendmentor.io/solutions/card-component-build-with-sass-using-partials-and-utility-classes-ByOipGK79)
+- Live Site URL: [https://mateusabelli.github.io/qr-code-component/](https://mateusabelli.github.io/qr-code-component/)
 
 ## My process
 
 ### Built with
 
-
-- [Sass](https://sass-lang.com/) - CSS Preprocessor
-- [Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/) - A CSS Reset by Andy Bell
-- Sass partials
-- Utility classes
-- 4.1 Sass folder structure
+- HTML 5
+- CSS 3
+  - Custom properties
+  - Flexbox
+  - CSS Grid
+  - Mobile-first workflow
 
 ### What I learned
 
-I've learned a lot about Sass, how to use it for a simple project and how to set up a dev environment with NPM scripts to watch and build the generated CSS.
+This is my second time solving this challenge, in my first solution I've learned a lot about SASS, folder structure and setting up a dev environment.
 
-I also learned about partials and file organization, most of my study came from [Kevin Powell's](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) YouTube channel.
-
-
-Here is an example of a component being built with utility classes, the idea here is that at any moment I can change it from a ```bg-white``` to ```bg-dark``` as well as modify other properties easily.
+In this solution I took a step back and simplified everything while also making sure everything had good accessibility where applicable. I've learned how to make QR Codes accessible for screen reader users.
 
 ```html
-<div class="card-container grid bg-white padding br-1" style="--gap: 1.5rem;">
-[...]
-</div>
-```
-Here is an example of my color utility classes that I use through my HTML
-```scss
-.bg-dark { background-color: hsl( $clr-dark-blue ); }
-.bg-white { background-color: hsl( $clr-white ); }
-.bg-light { background-color: hsl( $clr-light-grey ); }
-.bg-greyish { background-color: hsl( $clr-greyish-blue ); }
+<img src="./images/image-qr-code.png" alt="" />
+<a class="sr-only" href="https://www.frontendmentor.io/">QR Code link</a>
 ```
 
-### Continued development
-
-After finishing this project I started to learn PostCSS and I want to continue evolving my front-end skills by understanding better workflows as well as building a solid foundation in CSS.
-
-### Useful resources
-
-- [PX to REM Converter](https://nekocalc.com/px-to-rem-converter) - This helped me to build my typography
-- [Sass Guidelines](https://sass-guidelin.es/) - This is an amazing website which helped me to learn SASS and organize my files
-- [Learn Sass in 20 minutes](https://www.youtube.com/watch?v=Zz6eOVaaelI) This tutorial by Dev Ed helped me a lot to get started writing my first lines of Sass.
-- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) This YouTube channel has a lot of great videos that helped me with this project 
+```css
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+```
 
 ## Author
 
-- Frontend Mentor - [@MateusAbelli](https://www.frontendmentor.io/profile/MateusAbelli)
+- Website - [github.com/mateusabelli](https://github.com/mateusabelli)
+- Frontend Mentor - [@mateusabelli](https://www.frontendmentor.io/profile/mateusabelli)
+
+## Acknowledgements
+
+- [Modern CSS Reset (Snippets)](https://piccalil.li/blog/a-modern-css-reset/)
+- [TailwindCSS (Snippets)](https://tailwindcss.com/docs/screen-readers)

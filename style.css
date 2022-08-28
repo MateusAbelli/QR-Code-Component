@@ -1,0 +1,92 @@
+/* --------- Variables --------- */
+
+:root {
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 49%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+
+  /* Font Family */
+  --ff-sans: "Outfit", sans-serif;
+
+  /* Font Weight */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Font Sizes */
+  --fs-sm: 0.96rem;
+  --fs-md: 1.4rem;
+}
+
+/* --------- Reset & Base --------- */
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
+  color: var(--clr-dark-blue);
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-regular);
+
+  text-rendering: optimizeSpeed;
+  background-color: var(--clr-light-gray);
+}
+
+/* --------- Card Styling --------- */
+
+/* Avoid card touching the sides */
+main {
+  padding: 0 1rem;
+}
+
+.card-container {
+  padding: 1rem;
+  max-width: 20rem;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: var(--clr-white);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.card-image > img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 1.35rem 1rem;
+  text-align: center;
+}
+
+.card-content > h1 {
+  font-size: var(--fs-md);
+  margin-bottom: 1rem;
+}
+
+.card-content > p {
+  font-size: var(--fs-sm);
+  color: var(--clr-grayish-blue);
+}
+
+/* Hidden content readable for screen reader users */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
