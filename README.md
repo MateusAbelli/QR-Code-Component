@@ -15,7 +15,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/ ...](https://www.frontendmentor.io/solutions/card-component-build-with-sass-using-partials-and-utility-classes-ByOipGK79)
+- Solution URL: [https://www.frontendmentor.io/solutions/ ...](https://www.frontendmentor.io/solutions/qr-code-with-accessibility-improvements-written-in-html-and-css-UcsZf9r7uA)
 - Live Site URL: [https://mateusabelli.github.io/qr-code-component/](https://mateusabelli.github.io/qr-code-component/)
 
 ## My process
